@@ -1,4 +1,5 @@
 export default async function Home() {
+
   const url = "https://dummyjson.com/products?limit=9";
   const response = await fetch(url);
 

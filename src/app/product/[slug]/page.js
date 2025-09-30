@@ -1,7 +1,6 @@
 export default async function Slug({params}) {
-    const slug = params.slug;
 
-    const url = `https://dummyjson.com/products/${slug}`;
+    const url = `https://dummyjson.com/products/${params.slug}`;
     const response = await fetch(url);
 
     if(!response.ok) {
